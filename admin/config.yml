@@ -35,4 +35,5 @@ collections:
         widget: "list"
         default: ["学习"]
       - { label: "摘要", name: "description", widget: "string", required: false }
+      - { label: "封面图", name: "image", widget: "image", required: false, hint: "将写入 front matter 的 image 字段，例如 /assets/uploads/xxx.png" }
       - { label: "正文", name: "body", widget: "markdown" }

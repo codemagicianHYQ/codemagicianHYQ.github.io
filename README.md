@@ -25,6 +25,7 @@ date: 2026-05-18 12:00:00 +0800
 categories: [技术, 分类]
 tags: [标签1, 标签2]
 description: 一句话摘要
+image: /assets/uploads/your-cover.png
 ---
 
 这里写正文（Markdown）。
@@ -48,7 +49,7 @@ https://codemagicianhyq.github.io/admin/
 支持能力：
 
 - 新建/编辑/删除 `_posts` 文章
-- 可视化填写标题、时间、分类、标签、摘要
+- 可视化填写标题、时间、分类、标签、摘要、封面图
 - 支持图片上传到 `assets/uploads`
 - 使用编辑流（草稿 -> 审核 -> 发布）
 
