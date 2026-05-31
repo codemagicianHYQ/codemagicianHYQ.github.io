@@ -1,8 +1,13 @@
 ---
 title: OpenClaw 每日信息流：用自动化降低信息焦虑
-date: 2026-05-18 00:35:00 +0800
-categories: [AI, 信息管理]
-tags: [OpenClaw, 自动化, 资讯]
+date: 2026-05-03 00:35:00 +08:00
+categories:
+  - AI
+  - 信息管理
+tags:
+  - OpenClaw
+  - 自动化
+  - 资讯
 description: 让信息主动找你，而不是你被信息牵着走。
 ---
 
