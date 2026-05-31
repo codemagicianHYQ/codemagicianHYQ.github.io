@@ -1,0 +1,29 @@
+<script>
+  /* 跨页面记住主题选择，避免切换页面后回到默认色 */
+  (function () {
+    const key = "mode";
+    const saved = localStorage.getItem(key) || sessionStorage.getItem(key);
+
+    if (saved === "dark" || saved === "light") {
+      document.documentElement.setAttribute("data-mode", saved);
+      try {
+        sessionStorage.setItem(key, saved);
+      } catch (e) {}
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const root = document.documentElement;
+      const observer = new MutationObserver(function () {
+        const mode = root.getAttribute("data-mode");
+        if (mode === "dark" || mode === "light") {
+          localStorage.setItem(key, mode);
+        }
+      });
+
+      observer.observe(root, {
+        attributes: true,
+        attributeFilter: ["data-mode"],
+      });
+    });
+  })();
+</script>
